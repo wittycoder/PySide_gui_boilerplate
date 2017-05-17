@@ -3,7 +3,7 @@ A boilerplate for a PySide GUI with some enhancements/customizations for look an
 
 
 ## Install requirements
-pip install requirements.txt
+pip install -r requirements.txt
 
 ## Run
 python boilerplate.py
