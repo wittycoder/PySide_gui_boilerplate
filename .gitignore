@@ -1,6 +1,16 @@
 # -------------------------
 # Generated UI files:
 *_ui.py
+tcl
+
+# VirtualENV files
+pip-selfcheck.json
+activate/
+Include/
+Scripts/
+
+# VSCode
+.vscode
 
 # -------------------------
 # IntelliJ ignore files

@@ -3,8 +3,8 @@ import sys
 
 # These methods should be added to your QT classes or called from QT classes to change the default behavior/look/feel
 try:
-    from PySide.QtCore import *
-    from PySide.QtGui import *
+    from PySide2.QtCore import *
+    from PySide2.QtGui import *
 except ImportError:
     from PyQt.QtCore import *
     from PyQt.QtGui import *
@@ -28,7 +28,7 @@ class UiEnhancements(QObject):
             self.showNormal()
         else:
             self.show()
-        self.anim = QPropertyAnimation(self, "windowOpacity")
+        self.anim = QPropertyAnimation(self, b"windowOpacity")
         self.anim.setDuration(ANIM_SPEED)
         self.anim.setStartValue(0.0)
         self.anim.setEndValue(1.0)
@@ -42,7 +42,7 @@ class UiEnhancements(QObject):
             self.hide()
 
     def ui_fade_out(self, closing):
-        self.anim = QPropertyAnimation(self, "windowOpacity")
+        self.anim = QPropertyAnimation(self, b"windowOpacity")
         self.anim.setDuration(ANIM_SPEED)
         self.anim.setStartValue(1.0)
         self.anim.setEndValue(0.0)

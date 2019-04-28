@@ -7,6 +7,11 @@ A boilerplate for a PySide GUI with some enhancements/customizations for look an
 pip install -r requirements.txt
 ```
 
+## Build UIs
+```
+python buildUiFiles.py
+```
+
 ## Run
 ```
 python boilerplate.py

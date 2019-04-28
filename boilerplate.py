@@ -2,8 +2,9 @@ from __future__ import print_function
 import sys
 
 try:
-    from PySide.QtCore import *
-    from PySide.QtGui import *
+    from PySide2.QtCore import *
+    from PySide2.QtGui import *
+    from PySide2.QtWidgets import *
 except ImportError:
     from PyQt.QtCore import *
     from PyQt.QtGui import *
