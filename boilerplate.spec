@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['boilerplate.py'],
-             pathex=['C:\\dev\\Workspace\\QtGuiBoilerplate'],
+             pathex=['.'],
              binaries=[],
              datas=[],
              hiddenimports=[],
