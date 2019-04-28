@@ -6,8 +6,11 @@ try:
     from PySide2.QtGui import *
     from PySide2.QtWidgets import *
 except ImportError:
-    from PyQt.QtCore import *
-    from PyQt.QtGui import *
+    try:
+        from PyQt.QtCore import *
+        from PyQt.QtGui import *
+    except ImportError:
+        print('ERROR: No QT library import available!')
 
 from mainWindow_ui import Ui_Main
 from uiEnhancements import *
